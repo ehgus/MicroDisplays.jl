@@ -8,37 +8,37 @@ abstract type MicroDisplay end
 """
 open microdisplay.
 """
-open!(display::MicroDisplay) = error("No implementation for $(typeof(display))")
+open!(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
 
 """
 close microdisplay.
 """
-close!(display::MicroDisplay) = error("No implementation for $(typeof(display))")
+close!(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
 
 """
 start microdisplay.
 """
-start!(display::MicroDisplay) = error("No implementation for $(typeof(display))")
+start!(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
 
 """
 stop microdisplay.
 """
-stop!(display::MicroDisplay) = error("No implementation for $(typeof(display))")
+stop!(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
 
 """
 write (or upload) images on microdisplay.
 """
-write!(display::MicroDisplay, images_or_files) = error("No implementation for $(typeof(display))")
+write!(microdisplay::MicroDisplay, images_or_files) = error("No implementation for $(typeof(microdisplay))")
 
 # status functions
 """
 Return if the microdisplay is open.
 """
-isopen(display::MicroDisplay) = error("No implementation for $(typeof(display))")
+isopen(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
 
 """
 Return the pixels
 """
-size(display::MicroDisplay) = error("No implementation for $(typeof(display))")
+size(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
 
 end # module MicroDisplays
