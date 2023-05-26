@@ -2,6 +2,15 @@ module MicroDisplays
 
 import Base: isopen, size
 
+export MicroDisplay,
+    open!,
+    close!,
+    start!,
+    stop!,
+    write!,
+    isopen,
+    size
+
 abstract type MicroDisplay end
 
 # operation functions
