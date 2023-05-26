@@ -1,4 +1,4 @@
-name = "Microdisplays"
+name = "MicroDisplays"
 uuid = "9407d5d2-496b-4182-b772-f5b65742a6a2"
 authors = ["Dohyeon Lee <dleh428@kaist.ac.kr>"]
 version = "0.1.0"
