@@ -1,6 +1,6 @@
 module MicroDisplays
 
-import Base: write!, isopen, size
+import Base: isopen, size
 
 abstract type MicroDisplay end
 
