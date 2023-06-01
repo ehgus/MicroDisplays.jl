@@ -1,43 +1,32 @@
 module MicroDisplays
 
-import Base: isopen, size
+import Base: open, close, write, isopen, size
 
 export MicroDisplay,
-    open!,
-    close!,
-    start!,
-    stop!,
-    write!,
+    open,
+    close,
+    write,
     isopen,
     size
 
-abstract type MicroDisplay end
+abstract type MicroDisplay <: AbstractDisplay end
 
 # operation functions
 """
 open microdisplay.
 """
-open!(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
+open(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
 
 """
 close microdisplay.
 """
-close!(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
-
-"""
-start microdisplay.
-"""
-start!(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
-
-"""
-stop microdisplay.
-"""
-stop!(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
+close(microdisplay::MicroDisplay) = error("No implementation for $(typeof(microdisplay))")
 
 """
 write (or upload) images on microdisplay.
+Data could be delivered in a array or a file name etc.
 """
-write!(microdisplay::MicroDisplay, images_or_files) = error("No implementation for $(typeof(microdisplay))")
+write(microdisplay::MicroDisplay, data) = error("No implementation for $(typeof(microdisplay))")
 
 # status functions
 """
